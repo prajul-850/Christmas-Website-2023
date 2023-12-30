@@ -488,7 +488,7 @@ body {
 }
 
 .star {
-	margin: auto;
+	margin: 10px;
 	width: 90px;
 	height: 90px;
   left: 20%;
@@ -533,9 +533,162 @@ body {
 	to { stroke-dashoffset: 496; }
 }
 
-.xmas-tree{
-  position: relative;
-  height: 50px;
+.treecontainer {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  margin: auto;
+  margin-top: 20vh;
+  left: 73%;
+  top: 8%;
+  background: #0b1a5e;
+  border-radius: 120px;
+}
+
+.tree {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 13%;
+  top: 5%;
+}
+
+
+.tree-triangle3 {
+  position: absolute;
+  width: 66%;
+  height: 36%;
+  bottom: 20%;
+  left: 3.5%;
+  background: #3FD485;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.tree-triangle2 {
+  position: absolute;
+  width: 53%;
+  height: 33%;
+  bottom: 35%;
+  left: 10%;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background: #3FD485;
+  z-index: 2;
+}
+
+.tree-triangle1 {
+  position: absolute;
+  width: 42%;
+  height: 25%;
+  bottom: 50%;
+  left: 15.5%;
+  background: #3FD485;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  z-index: 3;
+}
+
+.trunk {
+  position: absolute;
+  width: 10%;
+  height: 16%;
+  background: #a23227;
+  z-index: 1;
+  bottom: 0;
+  left: 44%;
+}
+
+.ornament {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  box-shadow: 0 0 3px #D6001C;
+  background: #D6001C;
+  z-index: 4;
+}
+
+.shine {
+  position: absolute;
+  width: 55%;
+  height: 55%;
+  top: 10%;
+  right: 11%;
+  border-radius: 50%;
+  background: #ffcccc;
+}
+
+.or1 {
+  left: 26%;
+  top: 36%;
+}
+
+.or2 {
+  left: 40%;
+  top: 45%;
+}
+
+.or3 {
+  left: 19%;
+  top: 52%;
+}
+
+.or4 {
   left: 35%;
-  top: 35%;
+  top: 61%;
+}
+
+.or5 {
+  left: 51%;
+  top: 69%;
+}
+
+.or6 {
+  left: 15%;
+  top: 68%;
+}
+
+.ssstar {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background:#F1D900;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  left: 39.5%;
+  top: 16%;
+  z-index: 4;
+}
+
+.ssstar-highlight {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background: #F1D900;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 50% 70%, 50% 60%, 50% 46%, 50% 36%);
+  left: 39.5%;
+  top: 16%;
+  z-index: 4;
+}
+
+.ssstar-light {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background: #f3fab6;
+  filter: opacity(.7);
+  border-radius: 50%;
+  left: 39.5%;
+  top: 16%;
+  z-index: 3;
+  animation: star 3s ease-in-out infinite;
+}
+
+@keyframes star {
+  100% {
+    transform: scale(.5);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  0% {
+      transform: scale(.5);
+  }
 }
